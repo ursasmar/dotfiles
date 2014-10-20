@@ -132,6 +132,11 @@ curl -L http://install.ohmyz.sh | sh
 # Setup Sublime command line tool
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
+# Rupa Z
+cd
+git clone https://github.com/rupa/z.git
+chmod +x ~/z/z.sh
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################
