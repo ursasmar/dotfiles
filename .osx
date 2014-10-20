@@ -12,26 +12,18 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Dev Tools                                                                   #
 ###############################################################################
 
-# Setup Oh My ZSH
+# NOTE: To install brews and casks, run `source .brew-it.sh` in home dir, which also installs more dev tools.
+
+# Setup Oh My ZSH.
 curl -L http://install.ohmyz.sh | sh
 
-# Setup Sublime command line tool
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-
-# Rupa Z
+# Install Rupa Z.
 cd
 git clone https://github.com/rupa/z.git
 chmod +x ~/z/z.sh
 
-# Set p4merge as default Git diff tool
-git config --global merge.tool p4mergetool
-git config --global mergetool.p4mergetool.trustExitCode false
-git config --global mergetool.p4mergetool.cmd "$HOME/Applications/p4merge.app/Contents/Resources/launchp4merge \$PWD/\$BASE \$PWD/\$REMOTE \$PWD/\$LOCAL \$PWD/\$MERGED"
-git config --global difftool.p4mergetool.cmd "$HOME/Applications/p4merge.app/Contents/Resources/launchp4merge \$LOCAL \$REMOTE"
-git config --global difftool.sourcetree.cmd "$HOME/Applications/p4merge.app/Contents/Resources/launchp4merge \$LOCAL \$REMOTE"
-git config --global difftool.sourcetree.path ""
-git config --global mergetool.sourcetree.cmd "$HOME/Applications/p4merge.app/Contents/Resources/launchp4merge \$PWD/\$BASE \$PWD/\$REMOTE \$PWD/\$LOCAL \$PWD/\$MERGED"
-git config --global mergetool.sourcetree.trustexitcode true
+# Link to Sublime command line tool.
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
 ###############################################################################
 # General UI/UX                                                               #

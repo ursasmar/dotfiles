@@ -21,7 +21,7 @@ install gnu-sed --default-names
 # Install Bash 4
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before running `chsh`.
 install bash
-install bash-completion
+#install bash-completion
 
 # Install wget with IRI support
 install wget --enable-iri
@@ -35,21 +35,25 @@ install narwhal
 install vim --override-system-vi
 install homebrew/dupes/grep
 install homebrew/dupes/screen
+install homebrew/php/php55 --with-gmp
+install homebrew/php/php55-xdebug
 install homebrew/php/php56 --with-gmp
 install homebrew/php/php56-xdebug
 
 # Install other useful stuff
 install ack
 install composer
-install git
+install git bash-completion
 install node # This installs `npm` too using the recommended installation method
 install p7zip
 install tree
 install xpdf
 install zsh
+install zsh-completions
 
 tap homebrew/versions
 install lua52
+install bash-completion2
 
 # Remove outdated versions from the cellar
 cleanup
