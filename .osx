@@ -126,6 +126,12 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 #sudo rm -rf /System/Library/CoreServices/DefaultDesktop.jpg
 #sudo ln -s /path/to/your/image /System/Library/CoreServices/DefaultDesktop.jpg
 
+# Setup Oh My ZSH
+curl -L http://install.ohmyz.sh | sh
+
+# Setup Sublime command line tool
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+
 ###############################################################################
 # SSD-specific tweaks                                                         #
 ###############################################################################

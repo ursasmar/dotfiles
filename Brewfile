@@ -36,7 +36,7 @@ install vim --override-system-vi
 install homebrew/dupes/grep
 install homebrew/dupes/screen
 install homebrew/php/php56 --with-gmp
-install php56-xdebug
+install homebrew/php/php56-xdebug
 
 # Install other useful stuff
 install ack

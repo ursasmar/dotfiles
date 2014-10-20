@@ -4,6 +4,7 @@
 install caskroom/cask/brew-cask
 tap caskroom/versions
 
+cask install alfred 2> /dev/null
 cask install dropbox 2> /dev/null
 cask install google-chrome 2> /dev/null
 #cask install google-chrome-canary 2> /dev/null
@@ -18,6 +19,7 @@ cask install sequel-pro 2> /dev/null
 cask install sourcetree 2> /dev/null
 cask install sublime-text 2> /dev/null
 cask install the-unarchiver 2> /dev/null
+cask install textexpander 2> /dev/null
 cask install torbrowser 2> /dev/null
 cask install transmission 2> /dev/null
 cask install ukelele 2> /dev/null
