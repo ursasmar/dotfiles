@@ -14,6 +14,7 @@ cask install iterm2 2> /dev/null
 cask install macvim 2> /dev/null
 cask install miro-video-converter 2> /dev/null
 cask install mysqlworkbench 2> /dev/null
+cask install p4merge 2> /dev/null
 cask install phpstorm 2> /dev/null
 cask install sequel-pro 2> /dev/null
 cask install sourcetree 2> /dev/null
