@@ -35,48 +35,21 @@ install narwhal
 install vim --override-system-vi
 install homebrew/dupes/grep
 install homebrew/dupes/screen
-install homebrew/php/php55 --with-gmp
+install homebrew/php/php56 --with-gmp
+install php56-xdebug
 
-# Install some CTF tools; see https://github.com/ctfs/write-ups
-install bfg
-install binutils
-install binwalk
-install cifer
-install dex2jar
-install dns2tcp
-install fcrackzip
-install foremost
-install hashpump
-install hydra
-install john
-install knock
-install nmap
-install pngcheck
-install sqlmap
-install tcpflow
-install tcpreplay
-install tcptrace
-install ucspi-tcp # `tcpserver` et al.
-install xpdf
-install xz
-
-# Install other useful binaries
+# Install other useful stuff
 install ack
-#install exiv2
+install composer
 install git
-install imagemagick --with-webp
-install lynx
 install node # This installs `npm` too using the recommended installation method
 install p7zip
-install pigz
-install pv
-install rename
-install rhino
 install tree
-install webkit2png
-install zopfli
+install xpdf
+install zsh
 
-install homebrew/versions/lua52
+tap homebrew/versions
+install lua52
 
 # Remove outdated versions from the cellar
 cleanup

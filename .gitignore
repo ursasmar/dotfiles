@@ -1,8 +1,15 @@
-# Compiled Python files
-*.pyc
+# Composer
+composer.phar
+composer.lock
 
-# Folder view configuration files
+# OS
 .DS_Store
+.idea/
+.SyncArchive
+.idea
+*.log
+.SyncID
+.SyncIgnore
 Desktop.ini
 
 # Thumbnail cache files
@@ -12,3 +19,22 @@ Thumbs.db
 # Files that might appear on external disks
 .Spotlight-V100
 .Trashes
+
+# Compiled Python files
+*.pyc
+
+# Laravel
+/app/storage
+/vendor
+/bootstrap/compiled.php
+
+# Packages
+_ide_helper.php
+
+# Development collections
+/public/assets/compiled/public
+/public/assets/compiled/admin
+
+# Vagrant
+/Vagrantfile
+/.vagrant
