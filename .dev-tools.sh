@@ -2,6 +2,7 @@
 
 # Add some node packages.
 npm install coffee-script -g
+
 # Bower with completions.
 npm install bower -g
 bower completion > /usr/local/share/bash-completion/completions/bower

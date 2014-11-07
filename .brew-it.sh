@@ -73,6 +73,7 @@ brew cask install sequel-pro 2> /dev/null
 brew cask install sourcetree 2> /dev/null
 brew cask install sublime-text 2> /dev/null
 brew cask install the-unarchiver 2> /dev/null
+brew cask install teamviewer 2> /dev/null
 brew cask install textexpander 2> /dev/null
 brew cask install torbrowser 2> /dev/null
 brew cask install transmission 2> /dev/null
