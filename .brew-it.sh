@@ -44,6 +44,8 @@ brew install tree
 brew install xpdf
 brew install zsh
 brew install zsh-completions
+brew install qcachegrind
+brew linkapps
 
 brew unlink bash-completion # Just in case to prevent a conflict.
 brew tap homebrew/versions
