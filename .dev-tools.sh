@@ -1,5 +1,3 @@
-# NOTE: This was merged with .brew-it.sh
-
 # Add some node packages.
 npm install coffee-script -g
 
