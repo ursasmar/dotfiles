@@ -58,20 +58,25 @@ brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 # Install casks.
+brew cask install adobe-air 2> /dev/null
 brew cask install alfred 2> /dev/null
+brew cask install amazon-music 2> /dev/null
+brew cask install bittorrent-sync 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install evernote 2> /dev/null
 brew cask install google-chrome 2> /dev/null
-#brew cask install google-chrome-canary 2> /dev/null
 brew cask install imagealpha 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
-brew cask install macvim 2> /dev/null
+brew cask install java 2> /dev/null
+#brew cask install macvim 2> /dev/null
 brew cask install miro-video-converter 2> /dev/null
 brew cask install mysqlworkbench 2> /dev/null
+brew cask install odesk-team 2> /dev/null
 brew cask install p4merge 2> /dev/null
 brew cask install phpstorm 2> /dev/null
-brew cask install sequel-pro 2> /dev/null
+brew cask install skype 2> /dev/null
+brew cask install slack 2> /dev/null
 brew cask install sourcetree 2> /dev/null
 brew cask install sublime-text 2> /dev/null
 brew cask install the-unarchiver 2> /dev/null
@@ -81,6 +86,7 @@ brew cask install torbrowser 2> /dev/null
 brew cask install transmission 2> /dev/null
 brew cask install ukelele 2> /dev/null
 brew cask install vagrant 2> /dev/null
+brew cask install vagrant-manager 2> /dev/null
 brew cask install virtualbox 2> /dev/null
 brew cask install vlc 2> /dev/null
 brew cask install xtrafinder 2> /dev/null

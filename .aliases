@@ -15,6 +15,7 @@ alias g="git"
 alias h="history"
 alias j="jobs"
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
+alias gitsubs="grep path .gitmodules | sed 's/.*= //'"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
