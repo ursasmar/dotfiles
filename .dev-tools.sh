@@ -23,3 +23,14 @@ git config --global difftool.sourcetree.cmd "$HOME/Applications/p4merge.app/Cont
 git config --global difftool.sourcetree.path ""
 git config --global mergetool.sourcetree.cmd "$HOME/Applications/p4merge.app/Contents/Resources/launchp4merge \$PWD/\$BASE \$PWD/\$REMOTE \$PWD/\$LOCAL \$PWD/\$MERGED"
 git config --global mergetool.sourcetree.trustexitcode true
+
+# Generate new SSH key.
+ssh-keygen -t rsa -b 4096 -C "joshua@ecomevolution.com"
+
+# Start the ssh-agent.
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+# Add SSH config for Bitbucket.
+echo 'Host bitbucket.org
+ IdentityFile ~/.ssh/id_rsa' >> ~/.ssh/config

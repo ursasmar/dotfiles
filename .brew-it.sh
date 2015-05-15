@@ -65,6 +65,7 @@ brew cask install bittorrent-sync 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install evernote 2> /dev/null
 brew cask install google-chrome 2> /dev/null
+brew cask install go2shell 2> /dev/null
 brew cask install imagealpha 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
