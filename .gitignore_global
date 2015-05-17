@@ -1,0 +1,42 @@
+*~
+
+# Composer
+composer.phar
+composer.lock
+
+# OS
+.DS_Store
+.idea/
+/Vagrantfile
+vagrant
+.vagrant
+.SyncArchive
+.idea
+.SyncID
+.SyncIgnore
+*.log
+php_errorlog
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Compiled Python files
+*.pyc
+
+# Laravel
+/vendor
+/bootstrap/compiled.php
+
+# Packages
+_ide_helper.php
+
+# Development collections
+/public/assets/compiled/public
+/public/assets/compiled/admin
+Vagrantfile
