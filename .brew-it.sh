@@ -64,12 +64,15 @@ brew cask install amazon-music 2> /dev/null
 brew cask install bittorrent-sync 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install evernote 2> /dev/null
+brew cask install gimp 2> /dev/null
 brew cask install google-chrome 2> /dev/null
+brew cask install google-drive 2> /dev/null
 brew cask install go2shell 2> /dev/null
 brew cask install imagealpha 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install java 2> /dev/null
+brew cask install java6 2> /dev/null # Needed for PHPStorm 8 under Yosemite.
 #brew cask install macvim 2> /dev/null
 brew cask install miro-video-converter 2> /dev/null
 brew cask install mysqlworkbench 2> /dev/null
