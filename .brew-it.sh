@@ -38,6 +38,7 @@ brew install homebrew/php/php56-xdebug
 brew install ack
 brew install composer
 brew install git bash-completion
+brew install mackup
 brew install node # This installs `npm` too using the recommended installation method
 brew install p7zip
 brew install tree
@@ -94,3 +95,5 @@ brew cask install vagrant-manager 2> /dev/null
 brew cask install virtualbox 2> /dev/null
 brew cask install vlc 2> /dev/null
 brew cask install xtrafinder 2> /dev/null
+
+echo "Run mackup restore when ready!"

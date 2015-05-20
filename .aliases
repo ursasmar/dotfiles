@@ -14,6 +14,7 @@ alias p="cd ~/Projects"
 alias g="git"
 alias h="history"
 alias j="jobs"
+alias sshc="cat ~/.ssh/id_rsa.pub | pbcopy"
 alias vm='ssh vagrant@127.0.0.1 -p 2222'
 alias gpom="git pull origin master"
 alias gpsubs="git submodules foreach git pull origin master"
