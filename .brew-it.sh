@@ -62,8 +62,10 @@ brew cask install adobe-air 2> /dev/null
 brew cask install alfred 2> /dev/null
 brew cask install amazon-music 2> /dev/null
 brew cask install bittorrent-sync 2> /dev/null
+brew cask install crashplan 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install evernote 2> /dev/null
+brew cask install flux 2> /dev/null
 brew cask install gimp 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install google-drive 2> /dev/null
@@ -78,6 +80,8 @@ brew cask install miro-video-converter 2> /dev/null
 brew cask install mysqlworkbench 2> /dev/null
 brew cask install odesk-team 2> /dev/null
 brew cask install p4merge 2> /dev/null
+brew cask install paragon-ntfs 2> /dev/null
+brew cask install parallels 2> /dev/null
 brew cask install phpstorm 2> /dev/null
 brew cask install skype 2> /dev/null
 brew cask install slack 2> /dev/null
