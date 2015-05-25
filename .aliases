@@ -24,6 +24,7 @@ alias artisan="php artisan"
 alias pda="php artisan dump-autoload"
 alias hs="cd ~/Projects/homestead"
 alias hsup="cd ~/Projects/homestead && vagrant up"
+alias ehosts="sudo nano /private/etc/hosts"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
