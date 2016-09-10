@@ -37,6 +37,7 @@ brew install homebrew/php/php56-xdebug
 # Install other useful stuff
 brew install ack
 brew install composer
+brew install dnscrypt-proxy --with-plugins
 brew install git bash-completion
 brew install mackup
 brew install node # This installs `npm` too using the recommended installation method
