@@ -63,7 +63,6 @@ brew tap caskroom/versions
 brew cask install adobe-air 2> /dev/null
 brew cask install alfred 2> /dev/null
 brew cask install amazon-music 2> /dev/null
-brew cask install bittorrent-sync 2> /dev/null
 brew cask install crashplan 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install evernote 2> /dev/null
