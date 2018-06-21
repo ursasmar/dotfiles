@@ -13,7 +13,7 @@ yo --version && bower --version && grunt --version
 npm install -g generator-chrome-extension
 
 # Generate new SSH key.
-ssh-keygen -t rsa -b 4096 -C "joshua@ecomevolution.com"
+ssh-keygen -t rsa -b 4096 -C "user@localhost"
 
 # Start the ssh-agent.
 eval "$(ssh-agent -s)"
