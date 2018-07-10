@@ -76,8 +76,6 @@ xdebug.trace_enable = 1
 xdebug.cli_color = 1
 xdebug.remote_log = '~/Projects/logs/xdebug_remote.log'" > /usr/local/etc/php/7.2/conf.d/ext-xdebug.ini
 
-sudo brew service restart php
-
 # Remove outdated versions from the cellar
 brew cleanup
 
@@ -111,6 +109,12 @@ brew tap blackfireio/homebrew-blackfire
 brew install blackfire-agent
 brew install blackfire-php72
 echo "Config Blackfire by following these instructions: https://blackfire.io/docs/up-and-running/installation"
+
+# Restart services
+brew services restart php
+brew services restart mysql
+brew services restart postgresql
+brew services restart redis
 
 # Create locate DB
 sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
