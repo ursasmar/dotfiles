@@ -40,6 +40,7 @@ brew install xpdf
 brew install zsh
 brew install zsh-completions
 brew install qcachegrind
+brew install awscli # Don't forget to run "aws configure" afterward
 brew linkapps
 
 # Install dev tools
