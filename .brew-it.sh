@@ -1,3 +1,6 @@
+# Install Homebrew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # Make sure we’re using the latest Homebrew
 brew update
 
@@ -30,7 +33,7 @@ brew install vim --override-system-vi
 brew install homebrew/dupes/grep
 brew install homebrew/dupes/screen
 
-# Install other useful stuff
+# Install useful tools
 brew install mackup
 brew install ack
 brew install composer
@@ -42,10 +45,10 @@ brew install tree
 brew install xpdf
 brew install zsh
 brew install zsh-completions
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 brew install qcachegrind
 brew install awscli
 echo "AWS CLI installed. Run 'aws configure' when ready for use."
-brew linkapps
 
 # Install App Store apps
 brew install mas
@@ -64,9 +67,13 @@ composer global require laravel/installer
 composer global require laravel/vapor
 composer global require laravel/valet
 valet install
+
+# Setup sites
+cp valet_switch_user.sh ~/Sites/valet_switch_user.sh
+cp valet_xdebug_toggle.sh ~/Sites/valet_xdebug_toggle.sh
 cd ~/Sites
 valet park
-sudo php /usr/lib/php/install-pear-nozlib.phar -d /usr/local/lib/php -b /usr/local/bin
+
 pecl install xdebug
 
 # Config Xdebug
