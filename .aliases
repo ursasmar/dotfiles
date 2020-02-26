@@ -7,10 +7,10 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts
-alias d="cd ~/Documents/Dropbox"
+alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
+alias s="cd ~/Sites"
 alias g="git"
 alias h="history"
 alias j="jobs"
@@ -21,10 +21,9 @@ alias gpsubs="git submodules foreach git pull origin master"
 alias gitsubl="grep path .gitmodules | sed 's/.*= //'"
 alias art="php artisan"
 alias artisan="php artisan"
-alias pda="php artisan dump-autoload"
-alias hs="cd ~/Projects/homestead"
-alias hsup="cd ~/Projects/homestead && vagrant up"
-alias ehosts="sudo nano /private/etc/hosts"
+alias cda="composer dump-autoload"
+alias ehosts="sudo atom /private/etc/hosts"
+alias ealias='atom ~/.aliases'
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
