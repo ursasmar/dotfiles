@@ -26,7 +26,7 @@ brew install gnu-sed --default-names
 brew install bash
 
 # Install wget with IRI support
-brew install wget --with-iri
+brew install wget
 
 # Install more recent versions of some OS X tools
 brew install vim --override-system-vi
@@ -37,7 +37,8 @@ brew install homebrew/dupes/screen
 brew install mackup
 brew install ack
 brew install composer
-brew install dnscrypt-proxy --with-plugins
+brew install dnscrypt-proxy
+brew services start dnscrypt-proxy
 brew install git bash-completion
 brew install node # This installs `npm` too using the recommended installation method
 brew install p7zip
@@ -53,32 +54,40 @@ echo "AWS CLI installed. Run 'aws configure' when ready for use."
 # Install App Store apps
 brew install mas
 mas lucky xcode
+sudo xcodebuild -license accept
 mas lucky airmail
 mas lucky todoist
 
 # Install dev tools
 brew install php@7.2
+brew link php@7.2
 brew install php@7.3
+brew link php@7.3
 brew install php@7.4
+brew link php@7.4
+pecl install xdebug
 brew install mysql@5.7
+brew services start mysql@5.7
 brew install postgresql@10
+brew services start postgresql@10
 brew install redis
+brew services start redis
 composer global require laravel/installer
-composer global require laravel/vapor
+composer global require laravel/vapor-cli
 composer global require laravel/valet
 valet install
 
 # Setup sites
 cp valet_switch_user.sh ~/Sites/valet_switch_user.sh
 cp valet_xdebug_toggle.sh ~/Sites/valet_xdebug_toggle.sh
+mkdir -p ~/Sites
 cd ~/Sites
 valet park
 
-pecl install xdebug
-
 # Config Xdebug
 mkdir -p ~/Sites/xdebug
-XDEBUG_CONFIG = "zend_extension=xdebug.so
+
+XDEBUG_CONFIG="zend_extension=xdebug.so
 xdebug.var_display_max_data = -1
 xdebug.var_display_max_depth = 100
 xdebug.default_enable = 0
@@ -101,6 +110,10 @@ xdebug.trace_enable = 1
 xdebug.cli_color = 1
 xdebug.remote_log = '~/Sites/xdebug/remote.log'"
 
+mkdir -p /usr/local/etc/php/7.2/conf.d
+mkdir -p /usr/local/etc/php/7.3/conf.d
+mkdir -p /usr/local/etc/php/7.4/conf.d
+
 echo $XDEBUG_CONFIG > /usr/local/etc/php/7.2/conf.d/ext-xdebug.ini
 echo $XDEBUG_CONFIG > /usr/local/etc/php/7.3/conf.d/ext-xdebug.ini
 echo $XDEBUG_CONFIG > /usr/local/etc/php/7.4/conf.d/ext-xdebug.ini
@@ -109,7 +122,7 @@ echo $XDEBUG_CONFIG > /usr/local/etc/php/7.4/conf.d/ext-xdebug.ini
 brew cleanup
 
 brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
+brew tap homebrew/cask-versions
 
 # Install casks.
 brew cask install 1password 2> /dev/null
@@ -140,6 +153,7 @@ brew cask install microsoft-office 2> /dev/null
 brew cask install mindjet-mindmanager 2> /dev/null
 brew cask install navicat-premium 2> /dev/null
 brew cask install paragon-ntfs 2> /dev/null
+open /usr/local/Caskroom/paragon-ntfs/15/FSInstaller.app # TODO Detect the output and parse the installer app string
 brew cask install phpstorm 2> /dev/null
 brew cask install postman 2> /dev/null
 brew cask install qbittorrent 2> /dev/null
