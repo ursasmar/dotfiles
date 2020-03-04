@@ -86,6 +86,8 @@ valet park
 
 # Config Xdebug
 mkdir -p ~/Sites/xdebug
+mkdir -p ~/Sites/xdebug/profiler
+mkdir -p ~/Sites/xdebug/traces
 
 XDEBUG_CONFIG="zend_extension=xdebug.so
 xdebug.var_display_max_data = -1
