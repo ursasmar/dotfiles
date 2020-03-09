@@ -20,9 +20,9 @@ case $1 in
   ;;
   *)
     if [ -f /usr/local/etc/php/$v/conf.d/ext-xdebug.ini ]; then
-      . ~/Projects/valet_xdebug_toggle.sh off
+      . ~/Sites/xdebug_toggle.sh off
     else
-      . ~/Projects/valet_xdebug_toggle.sh on
+      . ~/Sites/xdebug_toggle.sh on
     fi
   ;;
 esac
