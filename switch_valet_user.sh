@@ -5,6 +5,8 @@
 # Remove valet
 valet uninstall --force
 rm -rf ~/.config/valet
+rm -rf /usr/local/etc/nginx/valet
+rm -rf /usr/local/bin/valet
 composer global remove laravel/valet
 
 # Change the permisions on all brew files
