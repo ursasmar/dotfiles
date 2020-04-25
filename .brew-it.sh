@@ -1,5 +1,5 @@
 # Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 # Make sure we’re using the latest Homebrew
 brew update
@@ -78,16 +78,15 @@ composer global require laravel/valet
 valet install
 
 # Setup sites
-cp valet_switch_user.sh ~/Sites/valet_switch_user.sh
-cp valet_xdebug_toggle.sh ~/Sites/valet_xdebug_toggle.sh
-mkdir -p ~/Sites
+mkdir -p $HOME/Sites
+cp valet_switch_user.sh $HOME/Sites/valet_switch_user.sh
+cp valet_xdebug_toggle.sh $HOME/Sites/valet_xdebug_toggle.sh
 cd ~/Sites
 valet park
 
 # Config Xdebug
-mkdir -p ~/Sites/xdebug
-mkdir -p ~/Sites/xdebug/profiler
-mkdir -p ~/Sites/xdebug/traces
+mkdir -p $HOME/Sites/xdebug/profiler
+mkdir -p $HOME/Sites/xdebug/traces
 
 XDEBUG_CONFIG="zend_extension=xdebug.so
 xdebug.var_display_max_data = -1
@@ -104,13 +103,13 @@ xdebug.collect_return = 1
 xdebug.collect_params = 10
 xdebug.show_mem_delta = 1
 xdebug.profiler_enable_trigger = 1
-xdebug.profiler_output_dir = '~/Sites/xdebug/profiler'
+xdebug.profiler_output_dir = '$HOME/Sites/xdebug/profiler'
 xdebug.trace_enable_trigger = 1
-xdebug.trace_output_dir = '~/Sites/xdebug/traces'
+xdebug.trace_output_dir = '$HOME/Sites/xdebug/traces'
 xdebug.profiler_enable = 0
 xdebug.trace_enable = 1
 xdebug.cli_color = 1
-xdebug.remote_log = '~/Sites/xdebug/remote.log'"
+xdebug.remote_log = '$HOME/Sites/xdebug/remote.log'"
 
 mkdir -p /usr/local/etc/php/7.2/conf.d
 mkdir -p /usr/local/etc/php/7.3/conf.d
@@ -131,7 +130,6 @@ brew cask install 1password 2> /dev/null
 brew cask install adobe-creative-cloud 2> /dev/null
 brew cask install alfred 2> /dev/null
 brew cask install amazon-music 2> /dev/null
-brew cask install amazon-chime 2> /dev/null
 brew cask install atom 2> /dev/null
 brew cask install beyond-compare 2> /dev/null
 brew cask install brave-browser 2> /dev/null
@@ -173,6 +171,7 @@ brew cask install torguard 2> /dev/null
 brew cask install vlc 2> /dev/null
 brew cask install whatsapp 2> /dev/null
 brew cask install wrike 2> /dev/null
+brew cask install zoomus 2> /dev/null
 
 # Install Atom packages
 apm install atom-beautify
