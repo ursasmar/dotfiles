@@ -209,3 +209,6 @@ fi"
 echo -e $ZSH_COMPLETIONS >> ~/.zshrc
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# because of issues with gnutils stty
+mkdir ~/.bin && ln -s /bin/stty ~/.bin

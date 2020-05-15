@@ -41,3 +41,5 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 # Add composer global packages to the path
 export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+export PATH="~/.bin:$PATH"
