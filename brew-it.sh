@@ -46,6 +46,7 @@ brew install tree
 brew install xpdf
 brew install qcachegrind
 brew install awscli
+brew install thefuck
 echo "AWS CLI installed. Run 'aws configure' when ready for use."
 
 # Install App Store apps
@@ -124,50 +125,24 @@ brew tap homebrew/cask-versions
 
 # Install casks.
 brew cask install bitwarden 2> /dev/null
-#brew cask install adobe-creative-cloud 2> /dev/null
 brew cask install alfred 2> /dev/null
-#brew cask install amazon-music 2> /dev/null
-#brew cask install atom 2> /dev/null
 brew cask install beyond-compare 2> /dev/null
 brew cask install brave-browser 2> /dev/null
-brew cask install cleanmymac 2> /dev/null
-brew cask install cyberduck 2> /dev/null
 brew cask install dnscrypt-proxy 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install evernote 2> /dev/null
-brew cask install electric-sheep 2> /dev/null
 brew cask install gitkraken 2> /dev/null
-brew cask install google-backup-and-sync 2> /dev/null
 brew cask install google-chrome 2> /dev/null
-brew cask install google-drive 2> /dev/null
 brew cask install imagealpha 2> /dev/null
 brew cask install imageoptim 2> /dev/null
-#brew cask install idrive 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install java 2> /dev/null
-brew cask install loom 2> /dev/null
-#brew cask install microsoft-office 2> /dev/null
-#brew cask install mindjet-mindmanager 2> /dev/null
-#brew cask install navicat-premium 2> /dev/null
-#brew cask install paragon-ntfs 2> /dev/null
-#open /usr/local/Caskroom/paragon-ntfs/15/FSInstaller.app # TODO Detect the output and parse the installer app string
 brew cask install phpstorm 2> /dev/null
 brew cask install postman 2> /dev/null
-#brew cask install qbittorrent 2> /dev/null
-#brew cask install quicken 2> /dev/null
-#brew cask install sketch 2> /dev/null
-#brew cask install skype 2> /dev/null
-#brew cask install slack 2> /dev/null
-brew cask install sourcetree 2> /dev/null
-#brew cask install steam 2> /dev/null
 brew cask install sublime-text 2> /dev/null
 brew cask install the-unarchiver 2> /dev/null
-brew cask install toggl 2> /dev/null
-brew cask install torbrowser 2> /dev/null
 brew cask install torguard 2> /dev/null
 brew cask install vlc 2> /dev/null
-#brew cask install whatsapp 2> /dev/null
-brew cask install wrike 2> /dev/null
 brew cask install zoomus 2> /dev/null
 
 # Install Atom packages
