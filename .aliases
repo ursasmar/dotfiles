@@ -158,3 +158,4 @@ alias empty="truncate -s 0 "
 
 alias weather="GET wttr.in/65711?QFu"
 alias moon="GET wttr.in/moon?F"
+alias w="GET wttr.in/65711?format=\"%c+%t+%w+%p+%o+%m+%S+%s\""
