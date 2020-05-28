@@ -47,6 +47,7 @@ brew install xpdf
 brew install qcachegrind
 brew install awscli
 brew install thefuck
+brew install wego
 echo "AWS CLI installed. Run 'aws configure' when ready for use."
 
 # Install App Store apps
