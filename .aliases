@@ -155,3 +155,6 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 
 # Empty a file
 alias empty="truncate -s 0 "
+
+alias weather="GET wttr.in/65711?QFu"
+alias moon="GET wttr.in/moon?F"
