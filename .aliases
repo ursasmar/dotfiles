@@ -6,6 +6,23 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# Use bat if it exists
+if ! [ -x "$(command -v bat)" ]; then
+  alias cat="exa"
+fi
+
+# Use Exa if it exists
+if ! [ -x "$(command -v exa)" ]; then
+  alias ls="exa"
+else
+	 # Detect which `ls` flavor is in use
+     if ls --color > /dev/null 2>&1; then # GNU `ls`
+     	colorflag="--color"
+     else # OS X `ls`
+     	colorflag="-G"
+     fi
+fi
+
 # Shortcuts
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
@@ -24,13 +41,6 @@ alias artisan="php artisan"
 alias cda="composer dump-autoload"
 alias ehosts="sudo atom /private/etc/hosts"
 alias ealias='atom ~/.aliases'
-
-# Detect which `ls` flavor is in use
-if ls --color > /dev/null 2>&1; then # GNU `ls`
-	colorflag="--color"
-else # OS X `ls`
-	colorflag="-G"
-fi
 
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"

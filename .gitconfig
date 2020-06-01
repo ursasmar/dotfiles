@@ -93,6 +93,8 @@
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
 	trustctime = false
 
+	pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+
 [color]
 
 	# Use colors in Git commands that are capable of colored output when
@@ -127,6 +129,9 @@
 
 	# Automatically correct and execute mistyped commands
 	autocorrect = 1
+
+[interactive]
+    diffFilter = delta --color-only
 
 [merge]
 

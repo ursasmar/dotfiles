@@ -47,6 +47,11 @@ brew install xpdf
 brew install qcachegrind
 brew install awscli
 brew install thefuck
+brew install fzf
+brew install git-delta
+brew install bat
+brew install exa
+
 echo "AWS CLI installed. Run 'aws configure' when ready for use."
 
 # Install App Store apps
