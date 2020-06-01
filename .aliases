@@ -8,7 +8,7 @@ alias -- -="cd -"
 
 # Use bat if it exists
 if ! [ -x "$(command -v bat)" ]; then
-  alias cat="exa"
+  alias cat="bat"
 fi
 
 # Use Exa if it exists
