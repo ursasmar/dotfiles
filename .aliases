@@ -7,12 +7,12 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Use bat if it exists
-if ! [ -x "$(command -v bat)" ]; then
+if exists bat; then
   alias cat="bat"
 fi
 
 # Use Exa if it exists
-if ! [ -x "$(command -v exa)" ]; then
+if exists exa; then
 	alias ls="exa"
 	alias l="exa -lF"
 	alias la="exa -laF"
