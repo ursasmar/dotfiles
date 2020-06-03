@@ -51,6 +51,7 @@ brew install fzf
 brew install git-delta
 brew install bat
 brew install exa
+brew install imagemagick
 
 echo "AWS CLI installed. Run 'aws configure' when ready for use."
 
@@ -127,6 +128,7 @@ brew cleanup
 
 brew install caskroom/cask/brew-cask
 brew tap homebrew/cask-versions
+brew tap homebrew/cask-fonts
 
 # Install casks.
 brew cask install bitwarden 2> /dev/null
@@ -135,7 +137,8 @@ brew cask install beyond-compare 2> /dev/null
 brew cask install brave-browser 2> /dev/null
 brew cask install dnscrypt-proxy 2> /dev/null
 brew cask install dropbox 2> /dev/null
-brew cask install evernote 2> /dev/null
+brew cask install font-fira-code 2> /dev/null
+brew cask install firefox 2> /dev/null
 brew cask install gitkraken 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install imagealpha 2> /dev/null
@@ -145,8 +148,6 @@ brew cask install java 2> /dev/null
 brew cask install phpstorm 2> /dev/null
 brew cask install postman 2> /dev/null
 brew cask install sublime-text 2> /dev/null
-brew cask install the-unarchiver 2> /dev/null
-brew cask install torguard 2> /dev/null
 brew cask install vlc 2> /dev/null
 brew cask install zoomus 2> /dev/null
 
