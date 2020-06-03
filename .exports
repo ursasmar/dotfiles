@@ -44,4 +44,4 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 export PATH="$HOME/.bin:$PATH"
 
-BAT_THEME="Monokai Extended Origin"
+export BAT_THEME="Nord"
