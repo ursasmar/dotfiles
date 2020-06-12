@@ -191,3 +191,113 @@ alias empty="truncate -s 0 "
 alias weather="GET wttr.in/65711?QFu"
 alias moon="GET wttr.in/moon?F"
 alias w="GET wttr.in/65711?format=\"%c+%t+%w+%p+%o+%m+%S+%s\""
+
+alias icat="kitty +kitten icat"
+
+xdebug-off () {
+	PHP72=false
+	PHP73=false
+	PHP74=false
+
+	FILE=/usr/local/etc/php/7.2/conf.d/ext-xdebug.ini
+    if test -f "$FILE"; then
+        mv /usr/local/etc/php/7.2/conf.d/ext-xdebug.ini /usr/local/etc/php/7.2/conf.d/ext-xdebug.ini.disabled
+        PHP72=true
+    fi
+
+    FILE=/usr/local/etc/php/7.2/conf.d/ext-blackfire.ini
+	if test -f "$FILE"; then
+		mv /usr/local/etc/php/7.2/conf.d/ext-blackfire.ini /usr/local/etc/php/7.2/conf.d/ext-blackfire.ini.disabled
+		PHP72=true
+	fi
+
+    FILE=/usr/local/etc/php/7.3/conf.d/ext-xdebug.ini
+	if test -f "$FILE"; then
+		mv /usr/local/etc/php/7.3/conf.d/ext-xdebug.ini /usr/local/etc/php/7.3/conf.d/ext-xdebug.ini.disabled
+		PHP73=true
+	fi
+
+	FILE=/usr/local/etc/php/7.3/conf.d/ext-blackfire.ini
+	if test -f "$FILE"; then
+		mv /usr/local/etc/php/7.3/conf.d/ext-blackfire.ini /usr/local/etc/php/7.3/conf.d/ext-blackfire.ini.disabled
+		PHP73=true
+	fi
+
+	FILE=/usr/local/etc/php/7.4/conf.d/ext-xdebug.ini
+	if test -f "$FILE"; then
+		mv /usr/local/etc/php/7.4/conf.d/ext-xdebug.ini /usr/local/etc/php/7.4/conf.d/ext-xdebug.ini.disabled
+		PHP74=true
+	fi
+
+	FILE=/usr/local/etc/php/7.4/conf.d/ext-blackfire.ini
+	if test -f "$FILE"; then
+		mv /usr/local/etc/php/7.4/conf.d/ext-blackfire.ini /usr/local/etc/php/7.4/conf.d/ext-blackfire.ini.disabled
+		PHP74=true
+	fi
+
+	if [ "$PHP72" = true ] ; then
+        brew services restart php@7.2
+    fi
+
+    if [ "$PHP73" = true ] ; then
+		brew services restart php@7.3
+	fi
+
+    if [ "$PHP74" = true ] ; then
+		brew services restart php@7.4
+	fi
+}
+
+xdebug-on () {
+	PHP72=false
+	PHP73=false
+	PHP74=false
+
+	FILE=/usr/local/etc/php/7.2/conf.d/ext-xdebug.ini.disabled
+    if test -f "$FILE"; then
+        mv /usr/local/etc/php/7.2/conf.d/ext-xdebug.ini.disabled /usr/local/etc/php/7.2/conf.d/ext-xdebug.ini
+        PHP72=true
+    fi
+
+    FILE=/usr/local/etc/php/7.2/conf.d/ext-blackfire.ini.disabled
+	if test -f "$FILE"; then
+		mv /usr/local/etc/php/7.2/conf.d/ext-blackfire.ini.disabled /usr/local/etc/php/7.2/conf.d/ext-blackfire.ini
+		PHP72=true
+	fi
+
+    FILE=/usr/local/etc/php/7.3/conf.d/ext-xdebug.ini.disabled
+	if test -f "$FILE"; then
+		mv /usr/local/etc/php/7.3/conf.d/ext-xdebug.ini.disabled /usr/local/etc/php/7.3/conf.d/ext-xdebug.ini
+		PHP73=true
+	fi
+
+	FILE=/usr/local/etc/php/7.3/conf.d/ext-blackfire.ini.disabled
+	if test -f "$FILE"; then
+		mv /usr/local/etc/php/7.3/conf.d/ext-blackfire.ini.disabled /usr/local/etc/php/7.3/conf.d/ext-blackfire.ini
+		PHP73=true
+	fi
+
+	FILE=/usr/local/etc/php/7.4/conf.d/ext-xdebug.ini.disabled
+	if test -f "$FILE"; then
+		mv /usr/local/etc/php/7.4/conf.d/ext-xdebug.ini.disabled /usr/local/etc/php/7.4/conf.d/ext-xdebug.ini
+		PHP74=true
+	fi
+
+	FILE=/usr/local/etc/php/7.4/conf.d/ext-blackfire.ini.disabled
+	if test -f "$FILE"; then
+		mv /usr/local/etc/php/7.4/conf.d/ext-blackfire.ini.disabled /usr/local/etc/php/7.4/conf.d/ext-blackfire.ini
+		PHP74=true
+	fi
+
+	if [ "$PHP72" = true ] ; then
+        brew services restart php@7.2
+    fi
+
+    if [ "$PHP73" = true ] ; then
+		brew services restart php@7.3
+	fi
+
+    if [ "$PHP74" = true ] ; then
+		brew services restart php@7.4
+	fi
+}
