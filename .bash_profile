@@ -2,6 +2,7 @@
 export PATH="$HOME/bin:$PATH";
 export NODE_PATH="/usr/local/lib/node"
 export PATH="/usr/local/share/npm/bin:$PATH"
+export PATH=$PATH:~/.symfony/bin
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.

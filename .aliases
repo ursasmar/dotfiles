@@ -188,9 +188,9 @@ command -v npm > /dev/null && alias npme="npm --registry http://registry.npmjs.e
 # Empty a file
 alias empty="truncate -s 0 "
 
-alias weather="GET wttr.in/65711?QFu"
+alias weather="GET wttr.in/McNeal-AZ?QFu"
 alias moon="GET wttr.in/moon?F"
-alias w="GET wttr.in/65711?format=\"%c+%t+%w+%p+%o+%m+%S+%s\""
+alias w="GET wttr.in/McNeal-AZ?format=\"%c+%t+%w+%p+%o+%m+%S+%s\""
 
 alias icat="kitty +kitten icat"
 
@@ -259,33 +259,15 @@ xdebug-on () {
         PHP72=true
     fi
 
-    FILE=/usr/local/etc/php/7.2/conf.d/ext-blackfire.ini.disabled
-	if test -f "$FILE"; then
-		mv /usr/local/etc/php/7.2/conf.d/ext-blackfire.ini.disabled /usr/local/etc/php/7.2/conf.d/ext-blackfire.ini
-		PHP72=true
-	fi
-
     FILE=/usr/local/etc/php/7.3/conf.d/ext-xdebug.ini.disabled
 	if test -f "$FILE"; then
 		mv /usr/local/etc/php/7.3/conf.d/ext-xdebug.ini.disabled /usr/local/etc/php/7.3/conf.d/ext-xdebug.ini
 		PHP73=true
 	fi
 
-	FILE=/usr/local/etc/php/7.3/conf.d/ext-blackfire.ini.disabled
-	if test -f "$FILE"; then
-		mv /usr/local/etc/php/7.3/conf.d/ext-blackfire.ini.disabled /usr/local/etc/php/7.3/conf.d/ext-blackfire.ini
-		PHP73=true
-	fi
-
 	FILE=/usr/local/etc/php/7.4/conf.d/ext-xdebug.ini.disabled
 	if test -f "$FILE"; then
 		mv /usr/local/etc/php/7.4/conf.d/ext-xdebug.ini.disabled /usr/local/etc/php/7.4/conf.d/ext-xdebug.ini
-		PHP74=true
-	fi
-
-	FILE=/usr/local/etc/php/7.4/conf.d/ext-blackfire.ini.disabled
-	if test -f "$FILE"; then
-		mv /usr/local/etc/php/7.4/conf.d/ext-blackfire.ini.disabled /usr/local/etc/php/7.4/conf.d/ext-blackfire.ini
 		PHP74=true
 	fi
 
