@@ -52,6 +52,7 @@ brew install git-delta
 brew install bat
 brew install exa
 brew install imagemagick
+brew install vim
 
 echo "AWS CLI installed. Run 'aws configure' when ready for use."
 
