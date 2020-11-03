@@ -23,3 +23,4 @@ else
 fi
 
 eval "$(thefuck --alias)"
+eval "$(register-python-argcomplete pipx)"
